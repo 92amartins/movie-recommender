@@ -5,7 +5,7 @@ test_that("Forrest Gump's mean rating is 2.7", {
 })
 
 test_that("Forrest Gump's rating count is 10", {
-  expect_identical(movie_rating_count(356), 10)
+  expect_identical(movie_rating_count(356), as.integer(10))
 })
 
 test_that("Forrest Gump's % of 4+ is 0.3", {
@@ -17,7 +17,7 @@ test_that("Forrest Gump's association with Toy Story equals to 0.412", {
 })
 
 test_that("Forrest Gump's ratings's correlation with Toy Story equals to 0.523", {
-  expect_identical(movies_ratings_correlation(356, 1), 0.523)
+  expect_identical(movies_correlation(356, 1), 0.523)
 })
 
 test_that("Forrest Gump's female mean rating is 3", {
