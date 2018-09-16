@@ -1,5 +1,7 @@
 library(testthat)
 
+source("non_personalized/non_personalized.R")
+
 test_that("Forrest Gump's mean rating is 2.7", {
   expect_identical(movie_mean_rating(356), 2.7)
 })
